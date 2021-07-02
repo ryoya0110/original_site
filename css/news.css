@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+
+.news_item {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 2.5% 10%;
+}
+.news_item:hover {
+	background: #eee;
+}
+.news_item p {
+	margin-right: 10%;
+}

@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+
+.menu .section_txt {
+	margin-bottom: 100px;
+}
+.menu_list {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+.menu_item {
+	width: 30%;
+	background: #e0e0e0;
+	border-radius: 4px;
+}
+.menu_img {
+	width: 80%;
+	height: 50%;
+	margin: 10% 0;
+}
+.menu_ttl {
+	font-size: 1.3em;
+	margin-bottom: 5%;
+}
+.menu_price {
+	font-size: 1.5em;
+	color: #C25B81;
+	margin-bottom: 5%;
+}
+.menu_price::before {
+	content: "〜";
+	margin-right: 5px;
+}
+.menu_price::after {
+	content: "〜";
+	margin-left: 5px;
+}
+.menu_txt {
+	width: 80%;
+	font-size: 0.8em;
+	line-height: 1.7;
+	white-space: normal;
+	margin: 0 auto 10%;
+}
+.type {
+	text-align: left;
+	font-size: 1.7em;
+	margin-bottom: 20px;
+	position: relative;
+}
+.type::after {
+	content: "";
+	position: absolute;
+	width: 200px;
+	height: 2px;
+	background: #808080;
+	top: 50%;
+	margin-left: 20px;
+}
+.type i {
+	margin-right: 5px;
+}

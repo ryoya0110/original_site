@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+
+.about_txts {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.about_txts img {
+	width: 50%;
+	box-shadow: 8px 8px 8px gray;
+}
+.about_txts .section_txt {
+	width: 40%;
+	line-height: 3em;
+}

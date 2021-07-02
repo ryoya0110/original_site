@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+
+dl {
+	display: flex;
+	flex-wrap: wrap;
+}
+dt {
+	width: 30%;
+	border-bottom: 1px solid #000;
+}
+dd {
+	width: 70%;
+}
