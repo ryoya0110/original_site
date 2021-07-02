@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,12 +14,9 @@
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/contact.css">
 </head>
-
 <body>
 
-
 	<header>
-
 		<div class="header_all">
 			<div class="sns">
 				<a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
@@ -45,9 +41,6 @@
 				<a id="header_hide_open"><i class="fas fa-bars"></i></a>
 			</div>
 		</div>
-
-
-
 		<div class="header_hide">
 			<nav class="navbar_hide">
 				<ul class="header_list">
@@ -66,60 +59,53 @@
 				<a id="header_hide_close"><i class="fas fa-times"></i></a>
 			</div>
 		</div>
-
 		<div id="background"></div>
-
 	</header>
 
-
 	<main>
-
 		<div class="site_map">
 			<a href="../index.html">ホーム</a>
 			<p>></p>
 			<p class="color">CONTACT</p>
 		</div>
-
 		<div class="page_top">
 			<img src="../img/contact.jpeg" alt="contact画像" class="page_img">
 			<div class="page_txts">
 				<h2 class="page_ttl">CONTACT<span>お問い合わせ</span></h2>
 			</div>
 		</div>
-
 		<section class="contact section">
 			<h2 class="section_ttl">CONTACT</h2>
-			<form action="#" method="post">
-				<dl>
-					<dt>ご用件</dt>
-					<dd>
-						<input id="about" type="radio" name="requests" value="私達について"><label for="about">私達について</label>
-						<input id="menu" type="radio" name="requests" value="商品一覧について"><label for="menu">商品一覧について</label>
-						<input id="news" type="radio" name="requests" value="お知らせについて"><label for="news">お知らせについて</label>
-						<input id="other" type="radio" name="requests" value="その他について"><label for="other">その他について</label>
-					</dd>
-					<dt>お名前</dt>
-					<dd>
-						<input type="text" name="name" placeholder="小倉　涼也">
-					</dd>
-					<dt>メールアドレス</dt>
-					<dd>
-						<input type="email" name="email" placeholder="ryougura@icloud.com">
-					</dd>
-					<dt>住所</dt>
-					<dd>
-						<input type="text" name="address" placeholder="宮城県仙台市若林区なないろの里1-12-23">
-					</dd>
-					<dt>お問い合わせ内容</dt>
-					<dd>
-						<textarea name="content" cols="30" rows="10"></textarea>
-					</dd>
-				</dl>
+			<form action="#" class="contact_form" id="form">
+				<div class="contact_box">
+					<label for="name" class="contact_form_ttl">ご用件</label>
+					<select class="contact_form_box1" name="subject" required="required">
+						<optgroup value>
+							<option class="select_with" value="プルダウンメニューで問い合わせ内容を選択" hidden>お問い合わせ内容を選択</option>
+							<option class="select_with" value="私達について">私達について</option>
+							<option class="select_with" value="商品について">商品について</option>
+							<option class="select_with" value="お知らせについて">お知らせについて</option>
+							<option class="select_with" value="その他">その他</option>
+						</optgroup>
+					</select>
+				</div>
+				<div class="contact_box">
+					<label for="name" class="contact_form_ttl">お名前</label>
+					<input type="text" class="contact_form_box2" name="" required="required" placeholder="例）小倉　涼也">
+				</div>
+				<div class="contact_box">
+					<label for="email" class="contact_form_ttl">メールアドレス</label>
+					<input type="email" class="contact_form_box2" name="" required="required" placeholder="例）ryougura@icloud.com">
+				</div>
+				<div class="contact_box _area">
+					<label for="message" class="contact_form_ttl _ttl">お問い合わせ内容</label>
+					<textarea name="message" class="contact_txtarea" id="message" cols="30" rows="10" required="required"
+						placeholder="例）それってどういう意味ですか？"></textarea>
+				</div>
+				<button type="submit" class="contact_btn"><i class="fas fa-paper-plane"></i>送信</button>
 			</form>
 		</section>
-
 	</main>
-
 
 	<footer>
 		<iframe
@@ -156,10 +142,8 @@
 		</div>
 	</footer>
 
-
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
 		crossorigin="anonymous"></script>
-	<script src="js/common.js"></script>
+	<script src="../js/common.js"></script>
 	</body>
-
 	</html>

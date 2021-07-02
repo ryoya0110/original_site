@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 .about_txts {
 	display: flex;
 	justify-content: space-between;
@@ -13,4 +12,59 @@
 .about_txts .section_txt {
 	width: 40%;
 	line-height: 3em;
+}
+
+@media screen and (max-width: 1024px) {
+	main {
+		padding-top: 0;
+	}
+	.page_top {
+		height: 400px;
+	}
+	.page_ttl {
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		padding-top: 0 !important;
+	}
+	.page_top {
+		height: 300px;
+	}
+	.page_ttl {
+		font-size: 3em;
+	}
+	.section_txt {
+		line-height: 2em !important;
+		font-size: 0.8em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.site_map {
+		padding: 65px 0 0 5%;
+	}
+	.page_top {
+		height: 200px;
+	}
+	.page_ttl {
+		font-size: 1.5em;
+	}
+	.about2 .about_txts {
+		flex-wrap: wrap;
+		flex-flow: column-reverse;
+	}
+	.about_txts img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.section_txt {
+		width: 100% !important;
+	}
+	.about3 .about_txts {
+		flex-wrap: wrap;
+		
+	}
 }
